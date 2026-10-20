@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            💻 IT ACADEMY
+        </div>
+        <div class="menu">
+            <a href="#home">Басты бет</a>
+            <a href="#about">IT туралы</a>
+            <a href="#quiz">Викторина</a>
+        </div>
+        <button onclick="changeTheme()">
+            🌙
+        </button>
+    </nav>
+</header>
+<section id="home" class="hero">
+    <h1>IT әлеміне қош келдіңіз!</h1>
+    <p>
+        Бағдарламалау, технология және болашақ мамандықтар әлемі.
+    </p>
+    <button onclick="welcome()">
+        Сәлемдесу
+    </button>
+    <p id="message"></p>
+</section>
+<section id="about">
+    <h2>IT бағыттары</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>🌐 Web Development</h3>
+            <p>
+                HTML, CSS және JavaScript арқылы сайттар жасау.
+            </p>
+        </div>
+        <div class="card">
+            <h3>🤖 Artificial Intelligence</h3>
+            <p>
+                Жасанды интеллект және ақылды жүйелер.
+            </p>
+        </div>
+        <div class="card">
+            <h3>🔐 Cyber Security</h3>
+            <p>
+                Ақпаратты және компьютерлік жүйелерді қорғау.
+            </p>
+        </div>
+        <div class="card">
+            <h3>🖥️ Software</h3>
+            <p>
+                Бағдарламалар мен қосымшалар жасау.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="information">
+    <h2>Неліктен IT таңдау керек?</h2>
+    <p id="info">
+        IT — қазіргі заманда ең жылдам дамып жатқан салалардың бірі.
+    </p>
+    <button onclick="showMore()">
+        Толығырақ оқу
+    </button>
+</section>
+<section class="clock">
+    <h2>⏰ Қазіргі уақыт</h2>
+    <div id="time">
+        00:00:00
+    </div>
+</section>
+<section id="quiz">
+    <h2>🧠 IT Викторинасы</h2>
+    <div class="question">
+        <h3>1. HTML не үшін қолданылады?</h3>
+        <label>
+            <input type="radio" name="q1" value="1">
+            Сайт құрылымын жасау
+        </label>
+        <label>
+            <input type="radio" name="q1" value="0">
+            Музыка тыңдау
+        </label>
+    </div>
+    <div class="question">
+        <h3>2. CSS не үшін қажет?</h3>
+        <label>
+            <input type="radio" name="q2" value="1">
+            Сайтты безендіру
+        </label>
+        <label>
+            <input type="radio" name="q2" value="0">
+            Компьютерді өшіру
+        </label>
+    </div>
+    <div class="question">
+        <h3>3. JavaScript не істейді?</h3>
+        <label>
+            <input type="radio" name="q3" value="1">
+            Сайтқа интерактив қосады
+        </label>
+        <label>
+            <input type="radio" name="q3" value="0">
+            Фото басып шығарады
+        </label>
+    </div>
+    <div class="question">
+        <h3>4. Python қандай тіл?</h3>
+        <label>
+            <input type="radio" name="q4" value="1">
+            Бағдарламалау тілі
+        </label>
+        <label>
+            <input type="radio" name="q4" value="0">
+            Операциялық жүйе
+        </label>
+    </div>
+    <div class="question">
+        <h3>5. Компьютердің миы деп нені атайды?</h3>
+        <label>
+            <input type="radio" name="q5" value="1">
+            Процессор
+        </label>
+        <label>
+            <input type="radio" name="q5" value="0">
+            Монитор
+        </label>
+    </div>
+    <button onclick="checkQuiz()">
+        Нәтижені тексеру
+    </button>
+    <h2 id="result"></h2>
+</section>
+<footer>
+    <p>©️ 2026 IT Academy</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
